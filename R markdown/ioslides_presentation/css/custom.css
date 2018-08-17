@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Tw Cen MT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tw Cen MT'), url('Tw Cen MT.woff') format('woff');
+  }
+
+
+.title-slide {
+  background: linear-gradient(90deg, #e64626 50%, #ffffff 50%);
+  /*background-color: #ffffff; */
+  /* background-color: #CBE7A5; #EDE0CF; ; #CA9F9D*/
+  /* background-image:url(http://goo.gl/EpXln); */
+}
+
+.title-slide hgroup > h1{
+  font-size:1.75em;
+  font-weight: bold;
+  color:#ffffff;
+  font-family: 'Tw Cen MT';
+  width: 300px;
+  word-wrap: break-word;
+  letter-spacing: 0px;
+} 
+.title-slide hgroup > h2{
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #000000;
+}
+
+.title-slide hgroup p {
+  font-family: 'Tw Cen MT';
+  color: #000000;
+  font-size: 1em;
+  padding-bottom: 200px;
+}
+
+slide:not(.segue) h2{
+  font-family: 'Tw Cen MT';
+  color: #e64626 ;  /* ; #EF5150*/
+}
+
+article p, article li, article li.build, section p, section li, h3{
+  font-family: 'Tw Cen MT';
+  color: #000000;
+}
+
+.footer {
+  font-family: 'Tw Cen MT';
+  font-size: 14px;
+  color: #000000;
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  font-weight: 0px;
+}
+
+.remark-slide-content:after {
+  content: "Footer text";
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  height: 40px;
+}
+
+aside.gdbar img{
+  height: auto;
+  width: 200px;
+}
+
+aside.gdbar{
+  height: auto;
+  width: 200px;
+  top: 600px;
+  left: 100px;
+}
+
+.column-left{
+  float: left;
+  width: 50%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.column-right{
+  float: right;
+  width: 50%;
+  text-align: left;
+  word-wrap: break-word;
+}

@@ -1,0 +1,29 @@
+---
+title: "Presentation Template"
+author: "Iain Crossing"
+date: ""
+output:
+  ioslides_presentation: 
+    css: css/custom.css
+    logo: img/logo.png
+---
+
+
+## Title And Content Layout
+
+- Some Content
+    - Some More Content
+    
+<div class="footer"> University of Sydney </div>
+
+## Title And Two Content Layout 
+
+<div class="column-left">
+Left Side  
+</div>
+
+<div class="column-right">
+Right Side
+</div>
+
+<div class="footer"> University of Sydney </div>
