@@ -18,18 +18,18 @@ min(df$value)
 max(df$value)
 
 p <- ggplot(df) +
-  geom_line(aes(x=Date, y=value, color=variable) , alpha = 1, size = 1) +
+  geom_line(aes(x=Date, y=value, color=variable) , alpha = 1, size = 0.5) +
   scale_x_date("Date",
                breaks = c(seq(from=as.Date("2014-12-12"),to=as.Date("2018-12-12"),by="1 year"),
                           as.Date(c(startDate, endDate),origin="1970-01-01")),
-               labels= c("2014","2015","2016","2017","2018","12-12-2013","09-30-2019")) +
+               labels= c("2014","2015","2016","2017","2018","12/12/2013","9/30/2019")) +
   scale_y_continuous(breaks = seq(9000, 13000, 500),
                      labels = c("","$9,500","$10,000","$10,500","$11,000","$11,500","$12,000","$12,500","$13,000"),
                      limits = c(9000,13000), expand = c(0,0)) +
   scale_color_manual(values = c("#22807C", "#A6A6A6"),
-                     labels = c("Label 1", "Label 2")) +
+                     labels = c("DEBIX", "BBG Bar US Agg")) +
   theme_bw() +
-  theme(text = element_text(family = "Titillium Regular"),
+  theme(text = element_text(family = "Titillium Regular", size = 40),
         legend.position = "top",
         panel.grid.major.y = element_line(colour = "#d4d4d4"),
         panel.grid.major.x = element_blank(),
@@ -41,8 +41,7 @@ p <- ggplot(df) +
         plot.background = element_rect(fill="white"),
         axis.title = element_blank(),
         axis.line.y =element_blank(),
-        axis.line.x = element_line(colour = "#4B4B4B"),
-        axis.text=element_text(size=9,family = "Titillium Regular")) +
+        axis.line.x = element_line(colour = "#4B4B4B")) +
   labs(color="")
 
 p
